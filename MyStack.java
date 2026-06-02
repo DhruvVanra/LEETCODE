@@ -1,13 +1,17 @@
 import java.util.*;
-
-class MyStack{
+class MyStack {
     Queue<Integer> q;
     public MyStack() {
-       q = new LinkedList<>();
+        q = new LinkedList<>();
     }
     
     public void push(int x) {
         q.add(x);
+        int size = q.size();
+
+        for(int i = 0; i < size - 1; i++) {
+            q.add(q.remove());
+        }
     }
     
     public int pop() {
@@ -20,9 +24,5 @@ class MyStack{
     
     public boolean empty() {
         return q.isEmpty();
-    }
-
-    public static void main(String[] args) {
-        
     }
 }
