@@ -1,5 +1,4 @@
 
-import com.sun.source.doctree.ReturnTree;
 
 class timeToBuyTIckets2073{
     public static  int timeRequiredToBuy(int[] tickets, int k) {
