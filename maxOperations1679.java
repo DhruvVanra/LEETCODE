@@ -25,9 +25,10 @@ class maxOperations1679{
 
 
     public static void main(String[] args) {
-int nums[] = {2, 2, 2, 2, 4, 4, 4, 4, 6, 6, 6};
-int k = 8;
-// Expected: 4
+       // Test Case 1
+int[] nums = {1, 2, 3, 4};
+int k = 5;
+// Expected: 2
         System.out.println(maxOperations(nums, k));
     }
 }
